@@ -4,7 +4,7 @@ const cors = require('cors');
 const router = require('./src/routes');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 'https://backend-friendlist-app.herokuapp.com/api/v1' || 5000;
 
 app.use(cors());
 app.use(express.json());
